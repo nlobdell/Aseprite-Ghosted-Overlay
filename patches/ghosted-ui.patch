@@ -1,0 +1,876 @@
+diff --git a/data/extensions/aseprite-theme/dark/theme.xml b/data/extensions/aseprite-theme/dark/theme.xml
+index ffe73e27c..c10787514 100644
+--- a/data/extensions/aseprite-theme/dark/theme.xml
++++ b/data/extensions/aseprite-theme/dark/theme.xml
+@@ -12,10 +12,10 @@
+     <dimensions>
+         <dim id="scrollbar_size" value="12"/>
+         <dim id="mini_scrollbar_size" value="6"/>
+-        <dim id="tabs_width" value="80"/>
+-        <dim id="tabs_height" value="17"/>
+-        <dim id="tabs_bottom_height" value="5"/>
+-        <dim id="docked_tabs_height" value="12"/>
++        <dim id="tabs_width" value="104"/>
++        <dim id="tabs_height" value="20"/>
++        <dim id="tabs_bottom_height" value="3"/>
++        <dim id="docked_tabs_height" value="14"/>
+         <dim id="tabs_close_icon_width" value="14"/>
+         <dim id="tabs_close_icon_height" value="12"/>
+         <dim id="tabs_icon_width" value="10"/>
+@@ -26,91 +26,91 @@
+         <dim id="palette_entries_separator" value="1"/>
+         <dim id="color_slider_height" value="14"/>
+         <dim id="timeline_base_size" value="12"/>
+-        <dim id="color_bar_buttons_height" value="16"/>
+-        <dim id="context_bar_height" value="18"/>
++        <dim id="color_bar_buttons_height" value="18"/>
++        <dim id="context_bar_height" value="20"/>
+         <dim id="brush_type_width" value="15"/>
+         <dim id="color_selector_bar_size" value="8"/>
+     </dimensions>
+     <colors>
+-        <color id="text" value="#c0c0c0"/>
+-        <color id="text_hot" value="#41444a" new="true"/>
+-        <color id="detail_text" value="#2c2c30" new="true"/>
+-        <color id="disabled" value="#202125"/>
+-        <color id="face" value="#2c2c30"/>
+-        <color id="hot_face" value="#faf0e6"/>
+-        <color id="selected" value="#e1b85f"/>
+-        <color id="selected_text" value="#41444a"/>
+-        <color id="separator_label" value="#6e9adb"/>
+-        <color id="background" value="#41444a"/>
+-        <color id="textbox_text" value="#c0c0c0"/>
+-        <color id="textbox_face" value="#41444a"/>
+-        <color id="textbox_code_face" value="#eeeeee"/>
+-        <color id="entry_suffix" value="#c6c6c6"/>
+-        <color id="link_text" value="#6e9adb"/>
+-        <color id="link_hover" value="#e1b85f"/>
+-        <color id="button_normal_text" value="#c0c0c0"/>
+-        <color id="button_hot_text" value="#c0c0c0"/>
+-        <color id="button_selected_text" value="#ffffff"/>
+-        <color id="check_hot_face" value="#575b61"/>
+-        <color id="check_focus_face" value="#41444a"/>
+-        <color id="radio_hot_face" value="#575b61"/>
+-        <color id="radio_focus_face" value="#41444a"/>
+-        <color id="menuitem_normal_text" value="#c0c0c0"/>
+-        <color id="menuitem_disabled_text" value="#202125"/>
+-        <color id="menuitem_normal_face" value="#2c2c30"/>
+-        <color id="menuitem_hot_text" value="#2c2c30"/>
+-        <color id="menuitem_hot_face" value="#c0c0c0"/>
+-        <color id="menuitem_highlight_text" value="#2c2c30"/>
+-        <color id="menuitem_highlight_face" value="#c0c0c0"/>
+-        <color id="window_face" value="#2c2c30"/>
+-        <color id="window_titlebar_text" value="#c0c0c0"/>
+-        <color id="window_titlebar_face" value="#41444a"/>
+-        <color id="editor_face" value="#202125"/>
++        <color id="text" value="#e3dced"/>
++        <color id="text_hot" value="#faf7ff" new="true"/>
++        <color id="detail_text" value="#9488b3" new="true"/>
++        <color id="disabled" value="#685f80"/>
++        <color id="face" value="#17131f"/>
++        <color id="hot_face" value="#221d2d"/>
++        <color id="selected" value="#b3a2ff"/>
++        <color id="selected_text" value="#050409"/>
++        <color id="separator_label" value="#c7bdff"/>
++        <color id="background" value="#100d17"/>
++        <color id="textbox_text" value="#faf7ff"/>
++        <color id="textbox_face" value="#0e0c16"/>
++        <color id="textbox_code_face" value="#181420"/>
++        <color id="entry_suffix" value="#9488b3"/>
++        <color id="link_text" value="#c7bdff"/>
++        <color id="link_hover" value="#faf7ff"/>
++        <color id="button_normal_text" value="#e3dced"/>
++        <color id="button_hot_text" value="#faf7ff"/>
++        <color id="button_selected_text" value="#050409"/>
++        <color id="check_hot_face" value="#221d2d"/>
++        <color id="check_focus_face" value="#181420"/>
++        <color id="radio_hot_face" value="#221d2d"/>
++        <color id="radio_focus_face" value="#181420"/>
++        <color id="menuitem_normal_text" value="#e3dced"/>
++        <color id="menuitem_disabled_text" value="#5f5775"/>
++        <color id="menuitem_normal_face" value="#17131f"/>
++        <color id="menuitem_hot_text" value="#050409"/>
++        <color id="menuitem_hot_face" value="#bfb3ff"/>
++        <color id="menuitem_highlight_text" value="#050409"/>
++        <color id="menuitem_highlight_face" value="#c7bdff"/>
++        <color id="window_face" value="#14101b"/>
++        <color id="window_titlebar_text" value="#faf7ff"/>
++        <color id="window_titlebar_face" value="#0f0c14"/>
++        <color id="editor_face" value="#07060c"/>
+         <color id="editor_sprite_border" value="#000000"/>
+         <color id="editor_sprite_bottom_border" value="#000000"/>
+         <color id="editor_view_face" value="#000000"/>
+-        <color id="listitem_normal_text" value="#c0c0c0"/>
+-        <color id="listitem_normal_face" value="#41444a"/>
+-        <color id="listitem_selected_text" value="#41444a"/>
+-        <color id="listitem_selected_face" value="#e1b85f"/>
+-        <color id="slider_empty_text" value="#202125"/>
+-        <color id="slider_full_text" value="#c0c0c0"/>
+-        <color id="tab_normal_text" value="#7d7d7d"/>
+-        <color id="tab_active_text" value="#c0c0c0"/>
+-        <color id="tab_active_face" value="#333333"/>
+-        <color id="popup_window_border" value="#c0c0c0"/>
+-        <color id="tooltip_text" value="#c0c0c0"/>
+-        <color id="tooltip_face" value="#4069c2"/>
+-        <color id="filelist_even_row_text" value="#c0c0c0"/>
+-        <color id="filelist_even_row_face" value="#41444a"/>
+-        <color id="filelist_odd_row_text" value="#c0c0c0"/>
+-        <color id="filelist_odd_row_face" value="#41444a"/>
+-        <color id="filelist_selected_row_text" value="#41444a"/>
+-        <color id="filelist_selected_row_face" value="#e1b85f"/>
++        <color id="listitem_normal_text" value="#e3dced"/>
++        <color id="listitem_normal_face" value="#17131f"/>
++        <color id="listitem_selected_text" value="#050409"/>
++        <color id="listitem_selected_face" value="#b8a8ff"/>
++        <color id="slider_empty_text" value="#b8adcf"/>
++        <color id="slider_full_text" value="#050409"/>
++        <color id="tab_normal_text" value="#9d90bc"/>
++        <color id="tab_active_text" value="#faf7ff"/>
++        <color id="tab_active_face" value="#1d1827"/>
++        <color id="popup_window_border" value="#6a5fa4"/>
++        <color id="tooltip_text" value="#faf7ff"/>
++        <color id="tooltip_face" value="#7568bb"/>
++        <color id="filelist_even_row_text" value="#e3dced"/>
++        <color id="filelist_even_row_face" value="#17131f"/>
++        <color id="filelist_odd_row_text" value="#e3dced"/>
++        <color id="filelist_odd_row_face" value="#17131f"/>
++        <color id="filelist_selected_row_text" value="#050409"/>
++        <color id="filelist_selected_row_face" value="#b8a8ff"/>
+         <color id="filelist_disabled_row_text" value="#ffc8c8"/>
+-        <color id="workspace" value="#333333"/>
+-        <color id="workspace_text" value="#c0c0c0"/>
+-        <color id="workspace_link" value="#6e9adb"/>
+-        <color id="workspace_link_hover" value="#e1b85f"/>
+-        <color id="timeline_normal" value="#41444a"/>
+-        <color id="timeline_normal_text" value="#636d79"/>
+-        <color id="timeline_hover" value="#d9d9d9"/>
+-        <color id="timeline_hover_text" value="#636d79"/>
+-        <color id="timeline_active" value="#c0c0c0"/>
+-        <color id="timeline_active_text" value="#c0c0c0"/>
+-        <color id="timeline_active_hover" value="#99b3c2"/>
+-        <color id="timeline_active_hover_text" value="#c0c0c0"/>
+-        <color id="timeline_clicked" value="#536069"/>
+-        <color id="timeline_clicked_text" value="#c0c0c0"/>
+-        <color id="timeline_focused_text" value="#41444a"/>
+-        <color id="timeline_padding" value="#41444a"/>
+-        <color id="timeline_band_highlight" value="#93adbb"/>
+-        <color id="timeline_band_bg" value="#76858e"/>
+-        <color id="status_bar_text" value="#636d79"/>
+-        <color id="status_bar_face" value="#333333"/>
+-        <color id="flag_normal" value="#2c2c30"/>
+-        <color id="flag_active" value="#c75a68"/>
+-        <color id="flag_clicked" value="#41444a"/>
++        <color id="workspace" value="#08060d"/>
++        <color id="workspace_text" value="#e3dced"/>
++        <color id="workspace_link" value="#c7bdff"/>
++        <color id="workspace_link_hover" value="#faf7ff"/>
++        <color id="timeline_normal" value="#181420"/>
++        <color id="timeline_normal_text" value="#9488b3"/>
++        <color id="timeline_hover" value="#221d2d"/>
++        <color id="timeline_hover_text" value="#e3dced"/>
++        <color id="timeline_active" value="#6a5fa4"/>
++        <color id="timeline_active_text" value="#faf7ff"/>
++        <color id="timeline_active_hover" value="#8172c7"/>
++        <color id="timeline_active_hover_text" value="#faf7ff"/>
++        <color id="timeline_clicked" value="#554598"/>
++        <color id="timeline_clicked_text" value="#faf7ff"/>
++        <color id="timeline_focused_text" value="#050409"/>
++        <color id="timeline_padding" value="#14101b"/>
++        <color id="timeline_band_highlight" value="#6a5fa4"/>
++        <color id="timeline_band_bg" value="#332247"/>
++        <color id="status_bar_text" value="#b8adcf"/>
++        <color id="status_bar_face" value="#0f0c14"/>
++        <color id="flag_normal" value="#17131f"/>
++        <color id="flag_active" value="#b3a2ff"/>
++        <color id="flag_clicked" value="#221d2d"/>
+         <color id="select_box_ruler" value="#0000ff"/>
+         <color id="select_box_grid" value="#64c864"/>
+         <color id="palette_entries_separator" value="#000000"/>
+@@ -522,12 +522,12 @@
+             <!-- nothing (transparent) -->
+         </style>
+         <style id="menu">
+-            <background color="window_face"/>
++            <background color="face"/>
+         </style>
+         <style id="menubox" extends="menu"/>
+         <style id="menubar" extends="menubox"/>
+         <style id="desktop">
+-            <background color="window_face"/>
++            <background color="workspace"/>
+         </style>
+         <style id="tooltip_window">
+             <background part="tooltip"/>
+@@ -563,13 +563,41 @@
+             <text color="link_hover" align="left" state="mouse"/>
+         </style>
+         <style id="browser_link" extends="link" padding-top="1"/>
++        <style id="workspace_panel" border="2" border-top="3">
++            <background color="face"/>
++            <border part="editor_normal"/>
++            <border part="editor_selected" state="focus"/>
++        </style>
++        <style id="workspace_inset_panel" extends="workspace_panel">
++            <background color="hot_face"/>
++        </style>
++        <style id="workspace_kicker" font="mini">
++            <text color="separator_label" align="left"/>
++        </style>
++        <style id="workspace_hero">
++            <text color="text" align="left wordwrap"/>
++        </style>
+         <style id="workspace_label">
+-            <text color="workspace_text" align="left"/>
++            <text color="text" align="left wordwrap"/>
++        </style>
++        <style id="workspace_section_title" font="mini">
++            <text color="separator_label" align="left"/>
+         </style>
+         <style id="workspace_link">
+             <text color="workspace_link" align="left"/>
+             <text color="workspace_link_hover" align="left" state="mouse"/>
+         </style>
++        <style id="workspace_hint" font="mini">
++            <text color="disabled" align="left wordwrap"/>
++        </style>
++        <style id="workspace_primary_link" border="3" border-bottom="4" padding-left="4" padding-right="4">
++            <background-border part="button_normal"/>
++            <background-border part="button_hot" state="mouse"/>
++            <background-border part="button_selected" state="selected"/>
++            <text color="button_normal_text" align="center middle"/>
++            <text color="button_hot_text" align="center middle" state="mouse"/>
++            <text color="button_selected_text" align="center middle" state="selected"/>
++        </style>
+         <style id="workspace_update_link">
+             <background-border part="button_normal"/>
+             <background-border part="button_hot" state="mouse"/>
+@@ -580,19 +608,19 @@
+             <text color="button_selected_text" align="left" state="selected"/>
+         </style>
+         <style id="view_base">
+-            <background color="window_face"/>
++            <background color="workspace"/>
+         </style>
+-        <style id="view" border="3" border-top="4">
+-            <background color="window_face"/>
+-            <border part="sunken_normal"/>
+-            <border part="sunken_focused" state="focus"/>
++        <style id="view" border="2" border-top="3">
++            <background color="face"/>
++            <border part="editor_normal"/>
++            <border part="editor_selected" state="focus"/>
+         </style>
+         <style id="editor_view">
+             <background color="editor_view_face"/>
+             <border part="editor_normal"/>
+             <border part="editor_selected" state="selected"/>
+         </style>
+-        <style id="workspace_view" border-top="4" extends="view">
++        <style id="workspace_view" border-top="3" extends="view">
+             <border part="editor_normal"/>
+             <border part="editor_selected" state="focus"/>
+         </style>
+@@ -713,7 +741,7 @@
+             <background color="face"/>
+         </style>
+         <style id="workspace_splitter">
+-            <background color="workspace"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="horizontal_separator" border="2">
+             <background color="window_face"/>
+@@ -787,31 +815,35 @@
+             <background part="transparent_scrollbar_thumb_hot" state="mouse"/>
+         </style>
+         <style id="main_tabs">
+-            <background color="window_face"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="workspace_tabs">
+-            <background color="workspace"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="workspace_check_box" extends="check_box" padding="4">
+             <text color="workspace_text" align="left middle" x="14"/>
+         </style>
+         <style id="tab">
++            <background color="window_titlebar_face"/>
++            <background color="tab_active_face" state="focus"/>
+             <background part="tab_normal" align="middle"/>
+             <background part="tab_active" align="middle" state="focus"/>
+             <text color="tab_normal_text" align="left" valign="middle"/>
+             <text color="tab_active_text" state="focus"/>
+         </style>
+         <style id="tab_text">
+-            <text color="tab_normal_text" align="left middle" x="4" y="1"/>
+-            <text color="tab_active_text" align="left middle" x="4" y="1" state="focus"/>
++            <text color="tab_normal_text" align="left middle" x="6" y="1"/>
++            <text color="tab_active_text" align="left middle" x="6" y="1" state="focus"/>
+         </style>
+         <style id="tab_bottom">
++            <background color="window_titlebar_face"/>
+             <background color="tab_active_face" state="focus"/>
+             <newlayer/>
+             <background part="tab_bottom_normal" align="middle"/>
+             <background part="tab_bottom_active" state="focus"/>
+         </style>
+         <style id="tab_filler">
++            <background color="window_titlebar_face"/>
+             <background part="tab_filler" align="middle"/>
+         </style>
+         <style id="tab_icon">
+diff --git a/data/extensions/aseprite-theme/theme.xml b/data/extensions/aseprite-theme/theme.xml
+index 00ea23525..066f8e094 100644
+--- a/data/extensions/aseprite-theme/theme.xml
++++ b/data/extensions/aseprite-theme/theme.xml
+@@ -11,10 +11,10 @@
+     <dimensions>
+         <dim id="scrollbar_size" value="12"/>
+         <dim id="mini_scrollbar_size" value="6"/>
+-        <dim id="tabs_width" value="80"/>
+-        <dim id="tabs_height" value="17"/>
+-        <dim id="tabs_bottom_height" value="5"/>
+-        <dim id="docked_tabs_height" value="12"/>
++        <dim id="tabs_width" value="104"/>
++        <dim id="tabs_height" value="20"/>
++        <dim id="tabs_bottom_height" value="3"/>
++        <dim id="docked_tabs_height" value="14"/>
+         <dim id="tabs_close_icon_width" value="14"/>
+         <dim id="tabs_close_icon_height" value="12"/>
+         <dim id="tabs_icon_width" value="10"/>
+@@ -24,89 +24,89 @@
+         <dim id="palette_outline_width" value="3"/>
+         <dim id="palette_entries_separator" value="1"/>
+         <dim id="color_slider_height" value="14"/>
+-        <dim id="timeline_base_size" value="12"/>
+-        <dim id="color_bar_buttons_height" value="16"/>
+-        <dim id="context_bar_height" value="18"/>
++        <dim id="timeline_base_size" value="13"/>
++        <dim id="color_bar_buttons_height" value="18"/>
++        <dim id="context_bar_height" value="20"/>
+         <dim id="brush_type_width" value="15"/>
+         <dim id="color_selector_bar_size" value="8"/>
+     </dimensions>
+     <colors>
+-        <color id="text" value="#000000"/>
+-        <color id="disabled" value="#968275"/>
+-        <color id="face" value="#d3cbbe"/>
+-        <color id="hot_face" value="#faf0e6"/>
+-        <color id="selected" value="#ff5555"/>
+-        <color id="selected_text" value="#ffffff"/>
+-        <color id="separator_label" value="#2c4c91"/>
+-        <color id="background" value="#ffffff"/>
+-        <color id="textbox_text" value="#000000"/>
+-        <color id="textbox_face" value="#ffffff"/>
+-        <color id="textbox_code_face" value="#eeeeee"/>
+-        <color id="entry_suffix" value="#c6c6c6"/>
+-        <color id="link_text" value="#2c4c91"/>
+-        <color id="link_hover" value="#ff5555"/>
+-        <color id="button_normal_text" value="#000000"/>
+-        <color id="button_hot_text" value="#000000"/>
+-        <color id="button_selected_text" value="#ffffff"/>
+-        <color id="check_hot_face" value="#ffebb6"/>
+-        <color id="check_focus_face" value="#c6c6c6"/>
+-        <color id="radio_hot_face" value="#ffebb6"/>
+-        <color id="radio_focus_face" value="#c6c6c6"/>
+-        <color id="menuitem_normal_text" value="#000000"/>
+-        <color id="menuitem_normal_face" value="#d3cbbe"/>
+-        <color id="menuitem_hot_text" value="#000000"/>
+-        <color id="menuitem_hot_face" value="#ffebb6"/>
+-        <color id="menuitem_highlight_text" value="#ffffff"/>
+-        <color id="menuitem_highlight_face" value="#7c909f"/>
+-        <color id="window_face" value="#d3cbbe"/>
+-        <color id="window_titlebar_text" value="#ffffff"/>
+-        <color id="window_titlebar_face" value="#7c909f"/>
+-        <color id="editor_face" value="#655561"/>
++        <color id="text" value="#171320"/>
++        <color id="disabled" value="#877ca3"/>
++        <color id="face" value="#f5f1ff"/>
++        <color id="hot_face" value="#fbf9ff"/>
++        <color id="selected" value="#7568bb"/>
++        <color id="selected_text" value="#faf7ff"/>
++        <color id="separator_label" value="#7568bb"/>
++        <color id="background" value="#fbf9ff"/>
++        <color id="textbox_text" value="#171320"/>
++        <color id="textbox_face" value="#fbf9ff"/>
++        <color id="textbox_code_face" value="#f4efff"/>
++        <color id="entry_suffix" value="#b3a7cc"/>
++        <color id="link_text" value="#7568bb"/>
++        <color id="link_hover" value="#171320"/>
++        <color id="button_normal_text" value="#171320"/>
++        <color id="button_hot_text" value="#0e0c16"/>
++        <color id="button_selected_text" value="#faf7ff"/>
++        <color id="check_hot_face" value="#e0d3ff"/>
++        <color id="check_focus_face" value="#f4efff"/>
++        <color id="radio_hot_face" value="#e0d3ff"/>
++        <color id="radio_focus_face" value="#f4efff"/>
++        <color id="menuitem_normal_text" value="#171320"/>
++        <color id="menuitem_normal_face" value="#f5f1ff"/>
++        <color id="menuitem_hot_text" value="#171320"/>
++        <color id="menuitem_hot_face" value="#e0d3ff"/>
++        <color id="menuitem_highlight_text" value="#171320"/>
++        <color id="menuitem_highlight_face" value="#c7bdff"/>
++        <color id="window_face" value="#f5f1ff"/>
++        <color id="window_titlebar_text" value="#faf7ff"/>
++        <color id="window_titlebar_face" value="#171320"/>
++        <color id="editor_face" value="#13111d"/>
+         <color id="editor_sprite_border" value="#000000"/>
+         <color id="editor_sprite_bottom_border" value="#41412c"/>
+         <color id="editor_view_face" value="#000000"/>
+-        <color id="listitem_normal_text" value="#000000"/>
+-        <color id="listitem_normal_face" value="#ffffff"/>
+-        <color id="listitem_selected_text" value="#ffffff"/>
+-        <color id="listitem_selected_face" value="#ff5555"/>
+-        <color id="slider_empty_text" value="#000000"/>
+-        <color id="slider_full_text" value="#ffffff"/>
+-        <color id="tab_normal_text" value="#000000"/>
+-        <color id="tab_active_text" value="#ffffff"/>
+-        <color id="tab_active_face" value="#7d929e"/>
+-        <color id="popup_window_border" value="#000000"/>
+-        <color id="tooltip_text" value="#000000"/>
+-        <color id="tooltip_face" value="#ffff7d"/>
+-        <color id="filelist_even_row_text" value="#000000"/>
+-        <color id="filelist_even_row_face" value="#ffffff"/>
+-        <color id="filelist_odd_row_text" value="#000000"/>
+-        <color id="filelist_odd_row_face" value="#ffffff"/>
+-        <color id="filelist_selected_row_text" value="#ffffff"/>
+-        <color id="filelist_selected_row_face" value="#ff5555"/>
++        <color id="listitem_normal_text" value="#171320"/>
++        <color id="listitem_normal_face" value="#fbf9ff"/>
++        <color id="listitem_selected_text" value="#faf7ff"/>
++        <color id="listitem_selected_face" value="#7568bb"/>
++        <color id="slider_empty_text" value="#171320"/>
++        <color id="slider_full_text" value="#faf7ff"/>
++        <color id="tab_normal_text" value="#877ca3"/>
++        <color id="tab_active_text" value="#faf7ff"/>
++        <color id="tab_active_face" value="#171320"/>
++        <color id="popup_window_border" value="#7568bb"/>
++        <color id="tooltip_text" value="#faf7ff"/>
++        <color id="tooltip_face" value="#7568bb"/>
++        <color id="filelist_even_row_text" value="#171320"/>
++        <color id="filelist_even_row_face" value="#fbf9ff"/>
++        <color id="filelist_odd_row_text" value="#171320"/>
++        <color id="filelist_odd_row_face" value="#fbf9ff"/>
++        <color id="filelist_selected_row_text" value="#faf7ff"/>
++        <color id="filelist_selected_row_face" value="#7568bb"/>
+         <color id="filelist_disabled_row_text" value="#ffc8c8"/>
+-        <color id="workspace" value="#7d929e"/>
+-        <color id="workspace_text" value="#655561"/>
+-        <color id="workspace_link" value="#655561"/>
+-        <color id="workspace_link_hover" value="#ffff7d"/>
+-        <color id="timeline_normal" value="#c6c6c6"/>
+-        <color id="timeline_normal_text" value="#000000"/>
+-        <color id="timeline_hover" value="#d9d9d9"/>
+-        <color id="timeline_hover_text" value="#000000"/>
+-        <color id="timeline_active" value="#7d929e"/>
+-        <color id="timeline_active_text" value="#ffffff"/>
+-        <color id="timeline_active_hover" value="#99b3c2"/>
+-        <color id="timeline_active_hover_text" value="#ffffff"/>
+-        <color id="timeline_clicked" value="#536069"/>
+-        <color id="timeline_clicked_text" value="#ffffff"/>
+-        <color id="timeline_focused_text" value="#ffffff"/>
+-        <color id="timeline_padding" value="#7d929e"/>
+-        <color id="timeline_band_highlight" value="#93adbb"/>
+-        <color id="timeline_band_bg" value="#76858e"/>
+-        <color id="status_bar_text" value="#2e3234"/>
+-        <color id="status_bar_face" value="#7d929e"/>
+-        <color id="flag_normal" value="#d3cbbe"/>
+-        <color id="flag_active" value="#ff0000"/>
+-        <color id="flag_clicked" value="#7d929e"/>
++        <color id="workspace" value="#e0d3ff"/>
++        <color id="workspace_text" value="#171320"/>
++        <color id="workspace_link" value="#7568bb"/>
++        <color id="workspace_link_hover" value="#120f1c"/>
++        <color id="timeline_normal" value="#d8ceff"/>
++        <color id="timeline_normal_text" value="#171320"/>
++        <color id="timeline_hover" value="#f4efff"/>
++        <color id="timeline_hover_text" value="#171320"/>
++        <color id="timeline_active" value="#7568bb"/>
++        <color id="timeline_active_text" value="#faf7ff"/>
++        <color id="timeline_active_hover" value="#8f7fd4"/>
++        <color id="timeline_active_hover_text" value="#faf7ff"/>
++        <color id="timeline_clicked" value="#5c4aaa"/>
++        <color id="timeline_clicked_text" value="#faf7ff"/>
++        <color id="timeline_focused_text" value="#faf7ff"/>
++        <color id="timeline_padding" value="#7568bb"/>
++        <color id="timeline_band_highlight" value="#c7bdff"/>
++        <color id="timeline_band_bg" value="#b8a8ff"/>
++        <color id="status_bar_text" value="#171320"/>
++        <color id="status_bar_face" value="#e0d3ff"/>
++        <color id="flag_normal" value="#f5f1ff"/>
++        <color id="flag_active" value="#7568bb"/>
++        <color id="flag_clicked" value="#d8ceff"/>
+         <color id="select_box_ruler" value="#0000ff"/>
+         <color id="select_box_grid" value="#64c864"/>
+         <color id="palette_entries_separator" value="#000000"/>
+@@ -518,12 +518,12 @@
+             <!-- nothing (transparent) -->
+         </style>
+         <style id="menu">
+-            <background color="window_face"/>
++            <background color="face"/>
+         </style>
+         <style id="menubox" extends="menu"/>
+         <style id="menubar" extends="menubox"/>
+         <style id="desktop">
+-            <background color="window_face"/>
++            <background color="workspace"/>
+         </style>
+         <style id="tooltip_window">
+             <background part="tooltip"/>
+@@ -559,13 +559,41 @@
+             <text color="link_hover" align="left" state="mouse"/>
+         </style>
+         <style id="browser_link" extends="link" padding-top="1"/>
++        <style id="workspace_panel" border="2" border-top="3">
++            <background color="face"/>
++            <border part="editor_normal"/>
++            <border part="editor_selected" state="focus"/>
++        </style>
++        <style id="workspace_inset_panel" extends="workspace_panel">
++            <background color="hot_face"/>
++        </style>
++        <style id="workspace_kicker" font="mini">
++            <text color="separator_label" align="left"/>
++        </style>
++        <style id="workspace_hero">
++            <text color="text" align="left wordwrap"/>
++        </style>
+         <style id="workspace_label">
+-            <text color="workspace_text" align="left"/>
++            <text color="text" align="left wordwrap"/>
++        </style>
++        <style id="workspace_section_title" font="mini">
++            <text color="separator_label" align="left"/>
+         </style>
+         <style id="workspace_link">
+             <text color="workspace_link" align="left"/>
+             <text color="workspace_link_hover" align="left" state="mouse"/>
+         </style>
++        <style id="workspace_hint" font="mini">
++            <text color="disabled" align="left wordwrap"/>
++        </style>
++        <style id="workspace_primary_link" border="3" border-bottom="4" padding-left="4" padding-right="4">
++            <background-border part="button_normal"/>
++            <background-border part="button_hot" state="mouse"/>
++            <background-border part="button_selected" state="selected"/>
++            <text color="button_normal_text" align="center middle"/>
++            <text color="button_hot_text" align="center middle" state="mouse"/>
++            <text color="button_selected_text" align="center middle" state="selected"/>
++        </style>
+         <style id="workspace_update_link">
+             <background-border part="button_normal"/>
+             <background-border part="button_hot" state="mouse"/>
+@@ -576,19 +604,19 @@
+             <text color="button_selected_text" align="left" state="selected"/>
+         </style>
+         <style id="view_base">
+-            <background color="window_face"/>
++            <background color="workspace"/>
+         </style>
+-        <style id="view" border="3" border-top="4">
+-            <background color="window_face"/>
+-            <border part="sunken_normal"/>
+-            <border part="sunken_focused" state="focus"/>
++        <style id="view" border="2" border-top="3">
++            <background color="face"/>
++            <border part="editor_normal"/>
++            <border part="editor_selected" state="focus"/>
+         </style>
+         <style id="editor_view">
+             <background color="editor_view_face"/>
+             <border part="editor_normal"/>
+             <border part="editor_selected" state="selected"/>
+         </style>
+-        <style id="workspace_view" border-top="4" extends="view">
++        <style id="workspace_view" border-top="3" extends="view">
+             <border part="editor_normal"/>
+             <border part="editor_selected" state="focus"/>
+         </style>
+@@ -709,7 +737,7 @@
+             <background color="face"/>
+         </style>
+         <style id="workspace_splitter">
+-            <background color="workspace"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="horizontal_separator" border="2">
+             <background color="window_face"/>
+@@ -783,31 +811,35 @@
+             <background part="transparent_scrollbar_thumb_hot" state="mouse"/>
+         </style>
+         <style id="main_tabs">
+-            <background color="window_face"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="workspace_tabs">
+-            <background color="workspace"/>
++            <background color="window_titlebar_face"/>
+         </style>
+         <style id="workspace_check_box" extends="check_box" padding="4">
+             <text color="workspace_text" align="left middle" x="14"/>
+         </style>
+         <style id="tab">
++            <background color="window_titlebar_face"/>
++            <background color="tab_active_face" state="focus"/>
+             <background part="tab_normal" align="middle"/>
+             <background part="tab_active" align="middle" state="focus"/>
+             <text color="tab_normal_text" align="left" valign="middle"/>
+             <text color="tab_active_text" state="focus"/>
+         </style>
+         <style id="tab_text">
+-            <text color="tab_normal_text" align="left middle" x="4" y="1"/>
+-            <text color="tab_active_text" align="left middle" x="4" y="1" state="focus"/>
++            <text color="tab_normal_text" align="left middle" x="6" y="1"/>
++            <text color="tab_active_text" align="left middle" x="6" y="1" state="focus"/>
+         </style>
+         <style id="tab_bottom">
++            <background color="window_titlebar_face"/>
+             <background color="tab_active_face" state="focus"/>
+             <newlayer/>
+             <background part="tab_bottom_normal" align="middle"/>
+             <background part="tab_bottom_active" state="focus"/>
+         </style>
+         <style id="tab_filler">
++            <background color="window_titlebar_face"/>
+             <background part="tab_filler" align="middle"/>
+         </style>
+         <style id="tab_icon">
+diff --git a/data/pref.xml b/data/pref.xml
+index ad4a280bc..41f42a542 100644
+--- a/data/pref.xml
++++ b/data/pref.xml
+@@ -236,7 +236,7 @@
+       <option id="play_subtags" type="bool" default="true" />
+     </section>
+     <section id="theme" text="Theme">
+-      <option id="selected" type="std::string" default="&quot;default&quot;" />
++      <option id="selected" type="std::string" default="&quot;default-dark&quot;" />
+       <option id="font" type="std::string" />
+       <option id="mini_font" type="std::string" />
+     </section>
+diff --git a/data/strings/en.ini b/data/strings/en.ini
+index 2e7c6a992..c13253214 100644
+--- a/data/strings/en.ini
++++ b/data/strings/en.ini
+@@ -884,11 +884,19 @@ new_file = New File...
+ open_file = Open File...
+ recover_files = Recover Files...
+ recover_files_tooltip = Recover files from crashed sessions or\nclosed sprites that were not saved in\nprevious sessions
++hall_kicker = Ghosted Hall
++hall_title = Build sprites in a ghostling-first workspace.
++hall_blurb = Start a new canvas, reopen recent work, or jump straight into the bundled cosmetic pipeline.
++ghostling_kicker = Ghostling tools
++ghostling_title = Cosmetic quick start
++ghostling_blurb = Launch the template or open the workflow guide without leaving the home tab.
++ghostling_new = New Ghostling Cosmetic...
++ghostling_guide = Ghostling Workflow Guide
+ share_crashdb = Share crash data with Aseprite developers
+ share_crashdb_tooltip = Check to share crash data with Aseprite developers automatically,\nthis helps to find new bugs and improve the general stability\nof Aseprite for all users
+-recent_files = Recent files:
+-recent_folders = Recent folders:
+-news = News:
++recent_files = Recent work
++recent_folders = Working folders
++news = Dispatches
+ checking_updates = Checking Updates...
+ new_version_available = New {0} v{1} available!
+ 
+diff --git a/data/widgets/home_view.xml b/data/widgets/home_view.xml
+index 3db0e3d87..72073c41d 100644
+--- a/data/widgets/home_view.xml
++++ b/data/widgets/home_view.xml
+@@ -2,39 +2,53 @@
+ <!-- Copyright (C) 2019-2021  Igara Studio S.A. -->
+ <!-- Copyright (C) 2001-2017  David Capello -->
+ <gui>
+-  <vbox noborders="true" id="home_view" border="4" childspacing="2" expansive="true">
++  <vbox noborders="true" id="home_view" border="6" childspacing="6" expansive="true">
+ 
+-    <hbox noborders="true" id="header_placeholder">
+-      <link id="aseprite_face" style="aseprite_face" />
+-      <vbox border="4" childspacing="4">
+-        <link id="new_file" text="@.new_file" style="workspace_link" />
++    <vbox noborders="true" id="header_placeholder" style="workspace_panel" border="8" childspacing="6">
++      <hbox noborders="true" childspacing="8">
++        <vbox noborders="true" expansive="true" childspacing="2">
++          <label text="@home_view.hall_kicker" style="workspace_kicker" />
++          <label text="@home_view.hall_title" style="workspace_hero" />
++          <label text="@home_view.hall_blurb" style="workspace_hint" />
++        </vbox>
++        <link id="aseprite_face" style="aseprite_face" />
++      </hbox>
++      <hbox noborders="true" childspacing="4">
++        <link id="new_file" text="@.new_file" style="workspace_primary_link" />
+         <link id="open_file" text="@.open_file" style="workspace_link" />
+         <link id="recover_sprites" text="@.recover_files" style="workspace_link"
+               tooltip="@.recover_files_tooltip" />
+-      </vbox>
+-      <boxfiller />
+-      <vbox border="4">
++        <boxfiller />
+         <check id="share_crashdb" text="@.share_crashdb"
+                tooltip="@.share_crashdb_tooltip" style="workspace_check_box" />
+         <link id="check_update" text="" style="workspace_link" />
++      </hbox>
++      <vbox noborders="true" id="ghostling_placeholder" style="workspace_inset_panel" border="6" childspacing="3">
++        <label text="@home_view.ghostling_kicker" style="workspace_kicker" />
++        <label text="@home_view.ghostling_title" style="workspace_label" />
++        <label text="@home_view.ghostling_blurb" style="workspace_hint" />
++        <hbox noborders="true" childspacing="4">
++          <link id="ghostling_new" text="@home_view.ghostling_new" style="workspace_primary_link" />
++          <link id="ghostling_guide" text="@home_view.ghostling_guide" style="workspace_link" />
++        </hbox>
+       </vbox>
+-    </hbox>
++    </vbox>
+     <splitter horizontal="true" noborders="true" childspacing="2"
+               expansive="true" by="percetage" position="50"
+               style="workspace_splitter">
+       <splitter vertical="true" noborders="true" childspacing="2"
+                 style="workspace_splitter">
+-        <vbox id="files_placeholder">
+-          <label text="@home_view.recent_files" style="workspace_label" />
++        <vbox id="files_placeholder" style="workspace_panel" border="4" childspacing="3">
++          <label text="@home_view.recent_files" style="workspace_section_title" />
+           <view id="files_view" expansive="true" style="workspace_view" />
+         </vbox>
+-        <vbox id="folders_placeholder">
+-          <label text="@home_view.recent_folders" style="workspace_label" />
++        <vbox id="folders_placeholder" style="workspace_panel" border="4" childspacing="3">
++          <label text="@home_view.recent_folders" style="workspace_section_title" />
+           <view id="folders_view" expansive="true" style="workspace_view" />
+         </vbox>
+       </splitter>
+-      <vbox id="news_placeholder" noborders="true" childspacing="2">
+-        <label text="@home_view.news" style="workspace_label" />
++      <vbox id="news_placeholder" style="workspace_panel" border="4" childspacing="3">
++        <label text="@home_view.news" style="workspace_section_title" />
+         <view id="news_view" expansive="true" style="workspace_view" />
+       </vbox>
+     </splitter>
+diff --git a/src/app/pref/preferences.cpp b/src/app/pref/preferences.cpp
+index 798c18238..7f681a680 100644
+--- a/src/app/pref/preferences.cpp
++++ b/src/app/pref/preferences.cpp
+@@ -66,6 +66,11 @@ Preferences::Preferences() : app::gen::GlobalPref("")
+ 
+   load();
+ 
++  const std::string legacyDefaultTheme = "default";
++  const std::string preferredTheme = theme.selected.defaultValue();
++  if (!isSet(theme.selected) || theme.selected() == legacyDefaultTheme)
++    theme.selected.setValueAndDefault(preferredTheme);
++
+   // Create a connection with the default document preferences grid
+   // bounds to sync the default grid bounds for new sprites in the
+   // "doc" layer.
+diff --git a/src/app/ui/home_view.cpp b/src/app/ui/home_view.cpp
+index 3e77f177c..947b9351d 100644
+--- a/src/app/ui/home_view.cpp
++++ b/src/app/ui/home_view.cpp
+@@ -27,6 +27,7 @@
+ #include "app/ui_context.h"
+ #include "app/util/clipboard.h"
+ #include "base/exception.h"
++#include "base/fs.h"
+ #include "fmt/format.h"
+ #include "ui/label.h"
+ #include "ui/resize_event.h"
+@@ -64,6 +65,8 @@ HomeView::HomeView()
+ {
+   newFile()->Click.connect([this] { onNewFile(); });
+   openFile()->Click.connect([this] { onOpenFile(); });
++  ghostlingNew()->Click.connect([this] { onNewGhostling(); });
++  ghostlingGuide()->Click.connect([this] { onOpenGhostlingGuide(); });
+   if (m_dataRecovery)
+     recoverSprites()->Click.connect([this] { onRecoverSprites(); });
+   else
+@@ -263,12 +266,41 @@ void HomeView::onOpenFile()
+   UIContext::instance()->executeCommandFromMenuOrShortcut(command);
+ }
+ 
++void HomeView::onNewGhostling()
++{
++  if (Command* command = Commands::instance()->byId("GhostlingNewCosmetic")) {
++    UIContext::instance()->executeCommandFromMenuOrShortcut(command);
++  }
++  else {
++    onOpenGhostlingGuide();
++  }
++}
++
++void HomeView::onOpenGhostlingGuide()
++{
++  Command* command = Commands::instance()->byId(CommandId::OpenBrowser());
++  if (!command)
++    return;
++
++  std::string filename = "CUSTOMIZATION.md";
++  const auto customGuide = base::normalize_path(
++    base::join_path(base::get_file_path(base::get_app_path()), "../../CUSTOMIZATION.md"));
++  if (base::is_file(customGuide))
++    filename = customGuide;
++
++  Params params;
++  params.set("filename", filename.c_str());
++  UIContext::instance()->executeCommandFromMenuOrShortcut(command, params);
++}
++
+ void HomeView::onResize(ui::ResizeEvent& ev)
+ {
+-  headerPlaceholder()->setVisible(ev.bounds().h > 200 * ui::guiscale());
+-  foldersPlaceholder()->setVisible(ev.bounds().h > 150 * ui::guiscale());
++  const bool showHeader = (ev.bounds().h > 210 * ui::guiscale());
++  headerPlaceholder()->setVisible(showHeader);
++  ghostlingPlaceholder()->setVisible(showHeader && ev.bounds().w > 740 * ui::guiscale());
++  foldersPlaceholder()->setVisible(ev.bounds().h > 170 * ui::guiscale());
+ #ifdef ENABLE_NEWS
+-  newsPlaceholder()->setVisible(ev.bounds().w > 200 * ui::guiscale());
++  newsPlaceholder()->setVisible(ev.bounds().w > 260 * ui::guiscale());
+ #else
+   newsPlaceholder()->setVisible(false);
+ #endif
+diff --git a/src/app/ui/home_view.h b/src/app/ui/home_view.h
+index a3f5ed9b4..b6e8fab92 100644
+--- a/src/app/ui/home_view.h
++++ b/src/app/ui/home_view.h
+@@ -90,6 +90,8 @@ protected:
+ private:
+   void onNewFile();
+   void onOpenFile();
++  void onNewGhostling();
++  void onOpenGhostlingGuide();
+   void onRecoverSprites();
+ 
+   RecentFilesListBox* m_files;
+diff --git a/src/app/ui/status_bar.cpp b/src/app/ui/status_bar.cpp
+index 61801dbb2..df4337a56 100644
+--- a/src/app/ui/status_bar.cpp
++++ b/src/app/ui/status_bar.cpp
+@@ -897,12 +897,12 @@ void StatusBar::onInitTheme(ui::InitThemeEvent& ev)
+ 
+   auto theme = SkinTheme::get(this);
+   setBgColor(theme->colors.statusBarFace());
+-  setBorder(gfx::Border(6 * guiscale(), 0, 6 * guiscale(), 0));
+-  setMinMaxSize(Size(0, textHeight() + 8 * guiscale()),
+-                Size(std::numeric_limits<int>::max(), textHeight() + 8 * guiscale()));
++  setBorder(gfx::Border(8 * guiscale(), 0, 8 * guiscale(), 0));
++  setMinMaxSize(Size(0, textHeight() + 10 * guiscale()),
++                Size(std::numeric_limits<int>::max(), textHeight() + 10 * guiscale()));
+ 
+   m_newFrame->setStyle(theme->styles.newFrameButton());
+-  m_commandsBox->setBorder(gfx::Border(2, 1, 2, 2) * guiscale());
++  m_commandsBox->setBorder(gfx::Border(4, 1, 4, 2) * guiscale());
+ 
+   if (m_snapToGridWindow) {
+     m_snapToGridWindow->initTheme();
+@@ -914,7 +914,7 @@ void StatusBar::onInitTheme(ui::InitThemeEvent& ev)
+ void StatusBar::onResize(ResizeEvent& ev)
+ {
+   Rect rc = ev.bounds();
+-  m_docControls->setVisible(doc() && rc.w > 300 * ui::guiscale());
++  m_docControls->setVisible(doc() && rc.w > 360 * ui::guiscale());
+ 
+   HBox::onResize(ev);
+ 

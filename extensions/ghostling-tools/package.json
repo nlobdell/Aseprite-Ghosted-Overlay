@@ -1,0 +1,21 @@
+{
+  "name": "ghostling-tools",
+  "displayName": "Ghostling Tools",
+  "description": "Authoring helpers for Ghostling cosmetics with anchor-pixel exports.",
+  "version": "1.0.0",
+  "author": {
+    "name": "OpenAI Codex"
+  },
+  "publisher": "custom",
+  "license": "MIT",
+  "categories": [
+    "Scripts"
+  ],
+  "contributes": {
+    "scripts": [
+      {
+        "path": "ghostling-tools.lua"
+      }
+    ]
+  }
+}
