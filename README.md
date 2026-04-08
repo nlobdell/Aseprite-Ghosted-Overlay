@@ -42,8 +42,3 @@ The patch currently updates:
 - `src/app/ui/home_view.cpp`
 - `src/app/ui/home_view.h`
 - `src/app/ui/status_bar.cpp`
-
-## Notes
-
-- Keep your full Aseprite checkout private unless you have reviewed the Aseprite license and are sure your use is allowed.
-- This repo is meant to be the shareable layer you can move between clean local checkouts.
